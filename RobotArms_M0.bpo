@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="22">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poIdentifier name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="numberOfArmt" org.eventb.core.predicate="numberOfArms∈ℕ1" org.eventb.core.source="/RobotArms/RobotArms_C0.buc|org.eventb.core.contextFile#RobotArms_C0|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="numberOfArmu" org.eventb.core.predicate="maxWeight∈ℕ1" org.eventb.core.source="/RobotArms/RobotArms_C0.buc|org.eventb.core.contextFile#RobotArms_C0|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poIdentifier name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/objectInArmsFunction/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="21">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTALLHYPobjectsInArmt"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1 ‥ numberOfArms × {0}∈1 ‥ numberOfArms → ℕ" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.invariant#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.invariant#-"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poSequent#INITIALISATION\/objectInArmsFunction\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTobjectsInArmt" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poIdentifier name="objectsInArms'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPobjectsInArmt" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTIDENTobjectsInArmt" org.eventb.core.poStamp="21"/>
+<org.eventb.core.poSequent name="objectAvailableAndArmReady/availableArmIdPointsToAnEmptyArm/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="22">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTHYPobjectsInArmu("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="availableArm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTHYPobjectsInArmu("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="objectAvailableAndArmReady/objectInArmsFunction/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="22">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTALLHYPobjectsInArmu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="objectsInArms{availableArm ↦ object}∈1 ‥ numberOfArms → ℕ" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.invariant#-"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.invariant#-"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poSequent#objectAvailableAndArmReady\/objectInArmsFunction\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTobjectsInArmu" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="22">
+<org.eventb.core.poIdentifier name="objectsInArms'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="availableArm" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="object" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPobjectsInArmu(" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTIDENTobjectsInArmu" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="availableArm∈1 ‥ numberOfArms" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#2|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="object∈1 ‥ maxWeight" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#2|org.eventb.core.guard#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPobjectsInArmu" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#EVTHYPobjectsInArmu(" org.eventb.core.poStamp="22">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="objectsInArms(availableArm)=0" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.event#2|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RobotArms/RobotArms_M0.bpo|org.eventb.core.poFile#RobotArms_M0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="21">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="objectsInArms∈1 ‥ numberOfArms → ℕ" org.eventb.core.source="/RobotArms/RobotArms_M0.bum|org.eventb.core.machineFile#RobotArms_M0|org.eventb.core.invariant#-"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
