@@ -38,9 +38,9 @@
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="armWithObject∈1 ‥ numberOfArms"/>
 <org.eventb.core.prExpr name="e0" org.eventb.core.expression="1 ‥ numberOfArms"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
-<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="putObjectInBox/theObjectFits/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
 <org.eventb.core.lang name="L"/>
@@ -63,27 +63,17 @@
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="objectsInArms(armWithObject)≠0"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="putObjectInBox/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9" org.eventb.core.psManual="true">
+<org.eventb.core.prProof name="putObjectInBox/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p2"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p6,p4,p5,p1,p7"/>
-<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p8,p9,p2,p10,p6,p4,p5,p1,p7">
-<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R30000"/>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
-</org.eventb.core.prRule>
-</org.eventb.core.prAnte>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p5,p8,p9,p1,p7,p2,p10">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
@@ -103,8 +93,7 @@
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
 <org.eventb.core.prPred name="p8" org.eventb.core.predicate="currentBox∈0 ‥ maxWeight"/>
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="armWithObject∈1 ‥ numberOfArms"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="putObjectInBox/putObjectInBox/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
@@ -128,11 +117,216 @@
 <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="objectsInArms(armWithObject)≠0"/>
 <org.eventb.core.prPred name="p2" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
-<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
 <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
 </org.eventb.core.prProof>
-<org.eventb.core.prProof name="putObjectInBox/objectsInArms/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+<org.eventb.core.prProof name="putObjectInBox/objectsInArms/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="ran(objectsInArms)≠(∅ ⦂ ℙ(ℤ))">
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬objectsInArms(armWithObject)=0">
+<org.eventb.core.prIdent name="armWithObject" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬objectsInArms=(∅ ⦂ ℙ(ℤ×ℤ))">
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="objectsInArms(armWithObject)≠0">
+<org.eventb.core.prIdent name="armWithObject" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/weDontAddArms/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(1 ‥ numberOfArms × {0})=1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="maxWeight∈ℕ1"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="numberOfArms∈ℕ1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="objectAvailableAndArmReady/weDontAddArms/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p2,p3,p9,p5,p8,p1,p6,p10,p7">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="currentBox" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="object" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="object∈1 ‥ maxWeight"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="maxWeight∈ℕ1"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="objectsInArms∈1 ‥ numberOfArms → ℕ"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="numberOfArms∈ℕ1"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="dom(objectsInArms)=1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="objectsInArms(availableArm)=0"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="availableArm∈1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(objectsInArms{availableArm ↦ object})=1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="currentBox∈0 ‥ maxWeight"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="availableArm∈dom(objectsInArms)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="putObjectInBox/weDontAddArms/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p5,p9,p7,p10,p1,p8,p2,p11">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="armWithObject" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="currentBox" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="armWithObject∈dom(objectsInArms)"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬objectsInArms(armWithObject)=0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="currentBox+objectsInArms(armWithObject)≤maxWeight"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="objectsInArms(armWithObject)≠0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="maxWeight∈ℕ1"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="objectsInArms∈1 ‥ numberOfArms → ℕ"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="numberOfArms∈ℕ1"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="dom(objectsInArms)=1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="currentBox∈0 ‥ maxWeight"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="armWithObject∈1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="dom(objectsInArms{armWithObject ↦ 0})=1 ‥ numberOfArms"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="theArmsWillNeverPickAnObjectTooLarge/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2"/>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p3"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬objectsInArms=(∅ ⦂ ℙ(ℤ×ℤ))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈ran(objectsInArms)⇒b≥x"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="ran(objectsInArms)≠(∅ ⦂ ℙ(ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈ran(objectsInArms)⇒b≥x)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="¬objectsInArms=(∅ ⦂ ℙ(ℤ×ℤ))∧(∃b⦂ℤ·∀x⦂ℤ·x∈ran(objectsInArms)⇒b≥x)"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="INITIALISATION/theArmsWillNeverPickAnObjectTooLarge/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4,p3,p1,p5">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="max(ran(1 ‥ numberOfArms × {0}))≤maxWeight"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="1≤numberOfArms"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈ran(1 ‥ numberOfArms × {0})⇒b≥x"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="ran(1 ‥ numberOfArms × {0})≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="maxWeight∈ℕ1"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="numberOfArms∈ℕ1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="objectAvailableAndArmReady/theArmsWillNeverPickAnObjectTooLarge/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+<org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p4,p1,p3">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="object" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="object∈1 ‥ maxWeight"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="ran(objectsInArms)≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="max(ran(objectsInArms{availableArm ↦ object}))≤maxWeight"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬objectsInArms=(∅ ⦂ ℙ(ℤ×ℤ))"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="max(ran(objectsInArms))≤maxWeight"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="objectsInArms(availableArm)=0"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="availableArm∈1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="ran(objectsInArms{availableArm ↦ object})≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="putObjectInBox/theArmsWillNeverPickAnObjectTooLarge/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14" org.eventb.core.psManual="true">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+<org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+<org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p17"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p4"/>
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p12,p2,p9,p14,p10,p6,p13,p3,p15"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11,p5,p8,p16,p4,p12,p2,p9,p14,p10,p6,p13,p3,p15">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R30000"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="armWithObject" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="currentBox" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p17" org.eventb.core.predicate="ran(objectsInArms{armWithObject ↦ 0})≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬objectsInArms=(∅ ⦂ ℙ(ℤ×ℤ))"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="objectsInArms(armWithObject)≠0"/>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="maxWeight∈ℕ1"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈ran(objectsInArms{armWithObject ↦ 0})⇒b≥x"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="dom(objectsInArms)=1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="armWithObject∈1 ‥ numberOfArms"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="max(ran(objectsInArms{armWithObject ↦ 0}))≤maxWeight"/>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="armWithObject∈dom(objectsInArms)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="ran(objectsInArms)≠(∅ ⦂ ℙ(ℤ))"/>
+<org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬objectsInArms(armWithObject)=0"/>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="currentBox+objectsInArms(armWithObject)≤maxWeight"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="objectsInArms∈1 ‥ numberOfArms → ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="∃b⦂ℤ·∀x⦂ℤ·x∈ran(objectsInArms)⇒b≥x"/>
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="max(ran(objectsInArms))≤maxWeight"/>
+<org.eventb.core.prPred name="p12" org.eventb.core.predicate="numberOfArms∈ℕ1"/>
+<org.eventb.core.prPred name="p13" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="currentBox∈0 ‥ maxWeight"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="putObjectInBox/currentBox/EQL" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
 <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
@@ -148,5 +342,98 @@
 <org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="deadlockFreedom/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="availableArm,object" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees availableArm,object)" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="object" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="p5,p6">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p7" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p8">
+<org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p8" org.eventb.core.prHyps="p1">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+<org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p5"/>
+</org.eventb.core.prAnte>
+<org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+<org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p9">
+<org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p9" org.eventb.core.prHyps="p1"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+<org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p10">
+<org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="currentBox" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p7" org.eventb.core.predicate="availableArm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ">
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p6" org.eventb.core.predicate="object∈1 ‥ maxWeight">
+<org.eventb.core.prIdent name="object" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p2" org.eventb.core.predicate="(∀availableArm⦂ℤ,object⦂ℤ·availableArm∈1 ‥ numberOfArms∧object∈1 ‥ maxWeight⇒availableArm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ)∧(((∀availableArm⦂ℤ·availableArm∈1 ‥ numberOfArms)∧(∀object⦂ℤ·object∈1 ‥ maxWeight)⇒(∃availableArm⦂ℤ·objectsInArms(availableArm)=0))∨((∀armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms⇒armWithObject∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ∧(¬objectsInArms(armWithObject)=0⇒armWithObject∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ))∧(((∀armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms)⇒(∃armWithObject⦂ℤ·¬objectsInArms(armWithObject)=0∧currentBox+objectsInArms(armWithObject)≤maxWeight))∨(∀arm⦂ℤ·arm∈1 ‥ numberOfArms⇒arm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ))))"/>
+<org.eventb.core.prPred name="p4" org.eventb.core.predicate="availableArm∈1 ‥ numberOfArms∧object∈1 ‥ maxWeight⇒availableArm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ">
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="object" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="objectsInArms∈1 ‥ numberOfArms → ℕ"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="((∀availableArm⦂ℤ·availableArm∈1 ‥ numberOfArms)∧(∀object⦂ℤ·object∈1 ‥ maxWeight)⇒(∃availableArm⦂ℤ·objectsInArms(availableArm)=0))∨((∀armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms⇒armWithObject∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ∧(¬objectsInArms(armWithObject)=0⇒armWithObject∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ))∧(((∀armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms)⇒(∃armWithObject⦂ℤ·¬objectsInArms(armWithObject)=0∧currentBox+objectsInArms(armWithObject)≤maxWeight))∨(∀arm⦂ℤ·arm∈1 ‥ numberOfArms⇒arm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ)))"/>
+<org.eventb.core.prPred name="p3" org.eventb.core.predicate="∀availableArm⦂ℤ,object⦂ℤ·availableArm∈1 ‥ numberOfArms∧object∈1 ‥ maxWeight⇒availableArm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="objectsInArms∈ℤ ⇸ ℤ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∀availableArm⦂ℤ,object⦂ℤ·availableArm∈1 ‥ numberOfArms∧object∈1 ‥ maxWeight⇒availableArm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ)∧((∃availableArm⦂ℤ,object⦂ℤ·availableArm∈1 ‥ numberOfArms∧object∈1 ‥ maxWeight⇒objectsInArms(availableArm)=0)∨((∀armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms⇒armWithObject∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ∧(objectsInArms(armWithObject)≠0⇒armWithObject∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ))∧((∃armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms⇒objectsInArms(armWithObject)≠0∧currentBox+objectsInArms(armWithObject)≤maxWeight)∨(∀arm⦂ℤ·arm∈1 ‥ numberOfArms⇒arm∈dom(objectsInArms)∧objectsInArms∈ℤ ⇸ ℤ))))"/>
+<org.eventb.core.prPred name="p5" org.eventb.core.predicate="availableArm∈1 ‥ numberOfArms">
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="availableArm∈dom(objectsInArms)">
+<org.eventb.core.prIdent name="availableArm" org.eventb.core.type="ℤ"/>
+</org.eventb.core.prPred>
+<org.eventb.core.prExpr name="e0" org.eventb.core.expression="1 ‥ numberOfArms"/>
+<org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+<org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+<org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+<org.eventb.core.prReas name="r7" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+</org.eventb.core.prProof>
+<org.eventb.core.prProof name="deadlockFreedom/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.lang name="L"/>
+<org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+<org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
+<org.eventb.core.prIdent name="currentBox" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="maxWeight" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="numberOfArms" org.eventb.core.type="ℤ"/>
+<org.eventb.core.prIdent name="objectsInArms" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.prPred name="p1" org.eventb.core.predicate="((∀availableArm⦂ℤ·availableArm∈1 ‥ numberOfArms)∧(∀object⦂ℤ·object∈1 ‥ maxWeight)⇒(∃availableArm⦂ℤ·objectsInArms(availableArm)=0))∨((∀armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms)⇒(∃armWithObject⦂ℤ·¬objectsInArms(armWithObject)=0∧currentBox+objectsInArms(armWithObject)≤maxWeight))∨(∀arm⦂ℤ·arm∈1 ‥ numberOfArms⇒objectsInArms(arm)+currentBox&gt;maxWeight)"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∃availableArm⦂ℤ·∃object⦂ℤ·availableArm∈1 ‥ numberOfArms∧object∈1 ‥ maxWeight⇒objectsInArms(availableArm)=0)∨(∃armWithObject⦂ℤ·armWithObject∈1 ‥ numberOfArms⇒objectsInArms(armWithObject)≠0∧currentBox+objectsInArms(armWithObject)≤maxWeight)∨(∀arm⦂ℤ·arm∈1 ‥ numberOfArms⇒objectsInArms(arm)+currentBox&gt;maxWeight)"/>
+<org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/objectInArmsFunction/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="21" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="objectAvailableAndArmReady/availableArmIdPointsToAnEmptyArm/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="22" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="objectAvailableAndArmReady/objectInArmsFunction/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="22" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/objectInArmsFunction/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="24" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="24" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/weDontAddArms/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="24" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="objectAvailableAndArmReady/availableArmIdPointsToAnEmptyArm/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="objectAvailableAndArmReady/objectInArmsFunction/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="objectAvailableAndArmReady/weDontAddArms/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="putObjectInBox/armHasObject/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="putObjectInBox/theObjectFits/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="putObjectInBox/objectInArmsFunction/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="putObjectInBox/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="putObjectInBox/weDontAddArms/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="putObjectInBox/putObjectInBox/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="23" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="boxNeedsToBeChanged/noArmCanFitObject/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="boxNeedsToBeChanged/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

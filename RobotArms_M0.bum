@@ -2,9 +2,13 @@
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="'" org.eventb.core.assignment="objectsInArms ≔ 1‥numberOfArms × {0}" org.eventb.core.label="initialiseRobotArms"/>
+<org.eventb.core.action name="act1" org.eventb.core.assignment="currentBox ≔ 0" org.eventb.core.label="initialiseCurrentBox"/>
 </org.eventb.core.event>
 <org.eventb.core.variable name="," org.eventb.core.identifier="objectsInArms"/>
+<org.eventb.core.variable name="var1" org.eventb.core.identifier="currentBox"/>
 <org.eventb.core.invariant name="-" org.eventb.core.label="objectInArmsFunction" org.eventb.core.predicate="objectsInArms ∈ 1‥numberOfArms → ℕ"/>
+<org.eventb.core.invariant name="inv1" org.eventb.core.label="currentBoxIsInRange" org.eventb.core.predicate="currentBox ∈ 0‥maxWeight"/>
+<org.eventb.core.invariant name="inv2" org.eventb.core.label="weDontAddArms" org.eventb.core.predicate="dom(objectsInArms) = 1‥numberOfArms"/>
 <org.eventb.core.seesContext name="." org.eventb.core.target="RobotArms_C0"/>
 <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="objectAvailableAndArmReady">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="availableArm"/>
@@ -13,5 +17,17 @@
 <org.eventb.core.guard name=")" org.eventb.core.label="availableArmIdPointsToAnEmptyArm" org.eventb.core.predicate="objectsInArms(availableArm) = 0"/>
 <org.eventb.core.action name="+" org.eventb.core.assignment="objectsInArms(availableArm) ≔ object" org.eventb.core.label="pickObject"/>
 <org.eventb.core.parameter name="," org.eventb.core.identifier="object"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt1" org.eventb.core.comment="I solved the invariant in this event by using the p1 prover" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="putObjectInBox">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="armWithObject"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="armWithObjectIsInRange" org.eventb.core.predicate="armWithObject ∈ 1‥numberOfArms"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="armHasObject" org.eventb.core.predicate="objectsInArms(armWithObject) ≠ 0"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="theObjectFits" org.eventb.core.predicate="currentBox + objectsInArms(armWithObject) ≤ maxWeight"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="currentBox ≔ currentBox + objectsInArms(armWithObject)" org.eventb.core.label="putObjectInBox"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="objectsInArms ≔ objectsInArms  {armWithObject ↦ 0}" org.eventb.core.label="freeArm"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="boxNeedsToBeChanged">
+<org.eventb.core.guard name="'" org.eventb.core.label="noArmCanFitObject" org.eventb.core.predicate="∀ arm · arm ∈ 1‥numberOfArms ⇒ objectsInArms(arm) + currentBox &gt; maxWeight"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="currentBox ≔ 0" org.eventb.core.label="setupNewBox"/>
 </org.eventb.core.event>
 </org.eventb.core.machineFile>

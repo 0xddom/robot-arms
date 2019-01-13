@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="putObjectInBox/armHasObject/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="putObjectInBox/theObjectFits/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="putObjectInBox/currentBoxIsInRange/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="putObjectInBox/putObjectInBox/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="putObjectInBox/objectsInArms/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="deadlockFreedom/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="13" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="deadlockFreedom/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="13" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
